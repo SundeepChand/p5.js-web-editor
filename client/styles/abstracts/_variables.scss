@@ -1,6 +1,8 @@
 $base-font-size: 12;
 
 //colors
+$my-dark-orange: rgb(255, 123, 0);
+$my-active-orange: rgb(255, 152, 56);
 $p5js-pink: #ed225d;
 $processing-blue: #007BBB;
 $p5js-active-pink: #f10046;
@@ -36,7 +38,7 @@ $darkest: #000;
 
 $themes: (
   light: (
-    logo-color: $p5js-pink,
+    logo-color: $my-dark-orange,
     logo-background-color: $lightest,
     heavy-text-color: $darker,
     primary-text-color: $dark,
@@ -51,8 +53,8 @@ $themes: (
     button-border-color: $middle-light,
     toolbar-button-color: $dark,
     toolbar-button-background-color: $medium-light,
-    button-background-hover-color: $p5js-pink,
-    button-background-active-color: $p5js-active-pink,
+    button-background-hover-color: $my-dark-orange,
+    button-background-active-color: $my-active-orange,
     button-nav-inactive-color: $middle-gray,
     button-hover-color: $lightest,
     button-active-color: $lightest,
@@ -84,25 +86,25 @@ $themes: (
     search-hover-text-color: $lightest,
     search-hover-background-color: $medium-dark,
     keyboard-shortcut-color: $middle-gray,
-    nav-hover-color: $p5js-pink,
+    nav-hover-color: $my-dark-orange,
     nav-border-color: $middle-light,
-    error-color: $p5js-pink,
+    error-color: $my-dark-orange,
     table-row-stripe-color: $medium-light,
     codefold-icon-open: url(../images/triangle-arrow-down.svg?byUrl),
     codefold-icon-closed: url(../images/triangle-arrow-right.svg?byUrl),
 
     primary-button-color: $lightest,
-    primary-button-background-color: $p5js-pink,
+    primary-button-background-color: $my-dark-orange,
 
     table-button-color: $lightest,
     table-button-background-color: $middle-gray,
     table-button-active-color: $lightest,
     table-button-background-active-color: #00A1D3,
     table-button-hover-color: $lightest,
-    table-button-background-hover-color: $p5js-pink,
+    table-button-background-hover-color: $my-dark-orange,
 
     progress-bar-background-color: $middle-gray,
-    progress-bar-active-color: $p5js-active-pink,
+    progress-bar-active-color: $my-active-orange,
 
     form-title-color: rgba(51, 51, 51, 0.87),
     form-secondary-title-color: $medium-dark,
@@ -111,7 +113,7 @@ $themes: (
     form-navigation-options-color: $middle-dark
   ),
   dark: (
-    logo-color: $p5js-pink,
+    logo-color: $my-dark-orange,
     logo-background-color: $lightest,
     heavy-text-color: $lightest,
     primary-text-color: $lightest,
@@ -126,8 +128,8 @@ $themes: (
     button-border-color: $middle-dark,
     toolbar-button-color: $lightest,
     toolbar-button-background-color: $medium-dark,
-    button-background-hover-color: $p5js-pink,
-    button-background-active-color: $p5js-active-pink,
+    button-background-hover-color: $my-dark-orange,
+    button-background-active-color: $my-active-orange,
     button-nav-inactive-color: $middle-light,
     button-hover-color: $lightest,
     button-active-color: $lightest,
@@ -157,27 +159,27 @@ $themes: (
     search-background-color: $lightest,
     search-clear-background-color: $medium-dark,
     search-hover-text-color: $lightest,
-    search-hover-background-color: $p5js-pink,
+    search-hover-background-color: $my-dark-orange,
     keyboard-shortcut-color: $middle-light,
-    nav-hover-color: $p5js-pink,
+    nav-hover-color: $my-dark-orange,
     nav-border-color: $middle-dark,
-    error-color: $p5js-pink,
+    error-color: $my-dark-orange,
     table-row-stripe-color: $dark,
     codefold-icon-open: url(../images/triangle-arrow-down-white.svg?byUrl),
     codefold-icon-closed: url(../images/triangle-arrow-right-white.svg?byUrl),
 
     primary-button-color: $lightest,
-    primary-button-background-color: $p5js-pink,
+    primary-button-background-color: $my-dark-orange,
 
     table-button-color: $lightest,
     table-button-background-color: $middle-gray,
     table-button-active-color: $lightest,
     table-button-background-active-color: #00A1D3,
     table-button-hover-color: $lightest,
-    table-button-background-hover-color: $p5js-pink,
+    table-button-background-hover-color: $my-dark-orange,
 
     progress-bar-background-color: $middle-gray,
-    progress-bar-active-color: $p5js-active-pink,
+    progress-bar-active-color: $my-active-orange,
 
     form-title-color: $lightest,
     form-secondary-title-color: $medium-light,
@@ -240,7 +242,7 @@ $themes: (
     codefold-icon-closed: url(../images/triangle-arrow-right-white.svg?byUrl),
 
     primary-button-color: $lightest,
-    primary-button-background-color: $p5js-pink,
+    primary-button-background-color: $my-dark-orange,
 
     table-button-color: $dark,
     table-button-background-color: $middle-gray,
@@ -250,7 +252,7 @@ $themes: (
     table-button-background-hover-color: $yellow,
 
     progress-bar-background-color: $middle-gray,
-    progress-bar-active-color: $p5js-active-pink,
+    progress-bar-active-color: $my-active-orange,
 
     form-title-color: $lightest,
     form-secondary-title-color: $medium-light,

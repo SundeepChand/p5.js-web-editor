@@ -7,6 +7,8 @@ export const Theme = {
 };
 
 export const colors = {
+  myDarkOrange: '#FF7B00',
+  myActiveOrange: '#FF9838',
   p5jsPink: '#ed225d',
   processingBlue: '#007BBB',
   p5jsActivePink: '#f10046',
@@ -67,18 +69,18 @@ export default {
     Button: {
       default: {
         foreground: colors.black,
-        background: grays.light,
+        background: colors.orange,
         border: grays.middleLight,
       },
       hover: {
         foreground: grays.lightest,
-        background: colors.p5jsPink,
-        border: colors.p5jsPink,
+        background: colors.orange,
+        border: colors.orange,
       },
       active: {
         foreground: grays.lightest,
-        background: colors.p5jsActivePink,
-        border: colors.p5jsActivePink,
+        background: colors.orange,
+        border: colors.orange,
       },
       disabled: {
         foreground: colors.black,
@@ -113,13 +115,13 @@ export default {
       },
       hover: {
         foreground: grays.lightest,
-        background: colors.p5jsPink,
-        border: colors.p5jsPink,
+        background: colors.myDarkOrange,
+        border: colors.myDarkOrange,
       },
       active: {
         foreground: grays.lightest,
-        background: colors.p5jsActivePink,
-        border: colors.p5jsActivePink,
+        background: colors.myActiveOrange,
+        border: colors.myActiveOrange,
       },
       disabled: {
         foreground: grays.light,
@@ -159,8 +161,8 @@ export default {
       },
       active: {
         foreground: grays.dark,
-        background: colors.p5jsActivePink,
-        border: colors.p5jsActivePink,
+        background: colors.myActiveOrange,
+        border: colors.myActiveOrange,
       },
       disabled: {
         foreground: grays.light,
