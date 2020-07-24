@@ -8,7 +8,14 @@ function KeyboardShortcutModal() {
     <div className="keyboard-shortcuts">
       <h3 className="keyboard-shortcuts__title">{t('CodeEditing')}</h3>
       <p className="keyboard-shortcuts__description">
-        {t('Code editing keyboard shortcuts follow')} <a href="https://shortcuts.design/toolspage-sublimetext.html" target="_blank" rel="noopener noreferrer">{t('Sublime Text shortcuts')}</a>.
+        { t('Code editing keyboard shortcuts follow ') }
+        <a
+          href="https://shortcuts.design/toolspage-sublimetext.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t('Sublime Text shortcuts')}
+        </a>.
       </p>
       <ul className="keyboard-shortcuts__list">
         <li className="keyboard-shortcut-item">

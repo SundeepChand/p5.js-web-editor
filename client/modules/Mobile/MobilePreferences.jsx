@@ -1,8 +1,7 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
-import { connect, useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { withRouter } from 'react-router';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import * as PreferencesActions from '../IDE/actions/preferences';
@@ -14,7 +13,7 @@ import Header from '../../components/mobile/Header';
 import PreferencePicker from '../../components/mobile/PreferencePicker';
 import { ExitIcon } from '../../common/icons';
 import { remSize, prop } from '../../theme';
-import { optionsOnOff, optionsPickOne, preferenceOnOff } from '../IDE/components/Preferences/PreferenceCreators';
+import { optionsPickOne, preferenceOnOff } from '../IDE/components/Preferences/PreferenceCreators';
 
 const Content = styled.div`
   z-index: 0;

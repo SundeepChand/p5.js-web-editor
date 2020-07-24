@@ -139,7 +139,12 @@ class Preferences extends React.Component {
                   value="contrast"
                   checked={this.props.theme === 'contrast'}
                 />
-                <label htmlFor="high-contrast-theme-on" className="preference__option">{this.props.t('HighContrast')}</label>
+                <label
+                  htmlFor="high-contrast-theme-on"
+                  className="preference__option"
+                >
+                  {this.props.t('HighContrast')}
+                </label>
               </div>
             </div>
             <div className="preference">
@@ -308,7 +313,12 @@ class Preferences extends React.Component {
                   value="On"
                   checked={(this.props.textOutput)}
                 />
-                <label htmlFor="text-output-on" className="preference__option preference__canvas">{this.props.t('PlainText')}</label>
+                <label
+                  htmlFor="text-output-on"
+                  className="preference__option preference__canvas"
+                >
+                  {this.props.t('PlainText')}
+                </label>
                 <input
                   type="checkbox"
                   onChange={(event) => {
@@ -320,7 +330,12 @@ class Preferences extends React.Component {
                   value="On"
                   checked={(this.props.gridOutput)}
                 />
-                <label htmlFor="table-output-on" className="preference__option preference__canvas">{this.props.t('TableText')}</label>
+                <label
+                  htmlFor="table-output-on"
+                  className="preference__option preference__canvas"
+                >
+                  {this.props.t('TableText')}
+                </label>
                 <input
                   type="checkbox"
                   onChange={(event) => {
@@ -332,7 +347,12 @@ class Preferences extends React.Component {
                   value="On"
                   checked={(this.props.soundOutput)}
                 />
-                <label htmlFor="sound-output-on" className="preference__option preference__canvas">{this.props.t('Sound')}</label>
+                <label
+                  htmlFor="sound-output-on"
+                  className="preference__option preference__canvas"
+                >
+                  {this.props.t('Sound')}
+                </label>
               </div>
             </div>
           </TabPanel>

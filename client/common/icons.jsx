@@ -12,7 +12,6 @@ import Exit from '../images/exit.svg';
 import DropdownArrow from '../images/down-filled-triangle.svg';
 import Preferences from '../images/preferences.svg';
 import Play from '../images/triangle-arrow-right.svg';
-import Code from '../images/code.svg';
 import Terminal from '../images/terminal.svg';
 
 

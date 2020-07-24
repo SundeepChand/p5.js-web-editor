@@ -19,7 +19,11 @@ export default () => {
   const { expandConsole, collapseConsole } = bindActionCreators(IDEActions, useDispatch());
   const { consoleIsExpanded } = useSelector(state => state.ide);
 
-  const actions = [{ icon: TerminalIcon, aria: 'Say Something', action: consoleIsExpanded ? collapseConsole : expandConsole }];
+  const actions = [{
+    icon: TerminalIcon,
+    aria: 'Say Something',
+    action: consoleIsExpanded ? collapseConsole : expandConsole
+  }];
 
   return (
     <BottomBarContent>
