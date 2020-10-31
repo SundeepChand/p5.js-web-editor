@@ -169,6 +169,24 @@ class FileNode extends React.Component {
     }
   }
 
+  handleDragStart = (event) => {
+    console.log('drag started');
+    event.dataTransfer.setData('text/plain', this.props.id);
+  }
+
+  handleDrop = (event) => {
+    event.preventDefault();
+    // this.props.newFile(event.target.id);
+    console.log('Dropped');
+    console.log(event.target.id); // dest
+    console.log(event.dataTransfer.getData('text')); // src
+  }
+
+  handleDragOver = (event) => {
+    event.preventDefault();
+    console.log('Drag over');
+  }
+
   validateFileName = () => {
     const currentName = this.props.name;
     const { updatedName } = this.state;
@@ -244,9 +262,16 @@ class FileNode extends React.Component {
     const { t } = this.props;
 
     return (
-      <div className={itemClass} >
+      <div className={itemClass}>
         { !isRoot &&
-          <div className="file-item__content" onContextMenu={this.toggleFileOptions}>
+          <div
+            className="file-item__content"
+            onContextMenu={this.toggleFileOptions}
+            onDragStart={this.handleDragStart}
+            onDragOver={isFolder ? this.handleDragOver : null}
+            onDrop={isFolder ? this.handleDrop : null}
+            draggable={isFile || isFolder ? 'true' : 'false'}
+          >
             <span className="file-item__spacer"></span>
             { isFile &&
               <span className="sidebar__file-item-icon">
@@ -272,6 +297,7 @@ class FileNode extends React.Component {
               </div>
             }
             <button
+              id={this.props.id}
               aria-label={this.state.updatedName}
               className="sidebar__file-item-name"
               onClick={this.handleFileClick}
